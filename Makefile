@@ -1,7 +1,7 @@
 .PHONY: all clean js server dev-server
 
 export PATH := node_modules/.bin:$(PATH)
-export SHELL := /bin/bash # required for OSX for some reason
+export SHELL := /usr/bin/env bash
 
 YARN := $(shell command -v yarn 2> /dev/null)
 
