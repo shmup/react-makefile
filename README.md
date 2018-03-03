@@ -4,6 +4,8 @@ clone and run `make`
 
 You need yarn: https://yarnpkg.com/lang/en/docs/install/
 
+You'll probably wanna remove the `.git` directory and start fresh
+
 #### make commands
 
   - make - install and build shit
