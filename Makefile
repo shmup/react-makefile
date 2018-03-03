@@ -5,10 +5,11 @@ export SHELL := /usr/bin/env bash
 
 YARN := $(shell command -v yarn 2> /dev/null)
 
-all: yarn.lock js
 ifndef YARN
   $(error "You need Yarn! https://yarnpkg.com/lang/en/docs/install/")
 endif
+
+all: yarn.lock js
 
 js:
 	NODE_ENV=production webpack -p --progress
@@ -27,5 +28,4 @@ node_modules:
 	mkdir -p $@
 
 clean:
-	rm -rf node_modules yarn.lock
-	rm -rf dist
+	rm -rf dist node_modules yarn.lock
