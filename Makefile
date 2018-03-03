@@ -1,4 +1,4 @@
-.PHONY: all clean js server js-server
+.PHONY: all clean js server dev-server
 
 export PATH := node_modules/.bin:$(PATH)
 export SHELL := /bin/bash # required for OSX for some reason
