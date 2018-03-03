@@ -3,7 +3,6 @@
 export PATH := node_modules/.bin:$(PATH)
 export SHELL := /bin/bash # required for OSX for some reason
 
-# check if you have yarn in your path
 YARN := $(shell command -v yarn 2> /dev/null)
 
 all: yarn.lock js
