@@ -4,7 +4,7 @@ export default class App extends React.Component {
   render() {
     return (
      <div style={{textAlign: 'center'}}>
-        <h1>Hello World</h1>
+        <h1>pee is stored in the Makefile</h1>
       </div>);
   }
 }
