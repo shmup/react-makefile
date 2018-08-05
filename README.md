@@ -13,7 +13,7 @@ You'll probably wanna remove the `.git` directory and start fresh
   - make server - run a python SimpleHTTPServer
   - make clean - remove the  `yarn.lock`, `node_modules/`, and `dist/`
 
-### uses
+#### uses
 
   - babel
   - webpack
