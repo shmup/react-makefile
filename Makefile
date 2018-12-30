@@ -3,13 +3,7 @@
 export PATH := node_modules/.bin:$(PATH)
 export SHELL := /usr/bin/env bash
 
-YARN := $(shell command -v yarn 2> /dev/null)
-
-ifndef YARN
-  $(error "You need Yarn! https://yarnpkg.com/lang/en/docs/install/")
-endif
-
-all: yarn.lock js
+all: package-lock.json js
 
 js:
 	NODE_ENV=production webpack -p --progress
@@ -19,13 +13,13 @@ server:
 
 dev-server:
 	webpack-dev-server -d --progress --inline --port 8080
-	
-yarn.lock: node_modules package.json
+
+package-lock.json: node_modules package.json
 	$(MAKE clean)
-	yarn install --production=false
+	npm install
 
 node_modules:
 	mkdir -p $@
 
 clean:
-	rm -rf dist node_modules yarn.lock
+	rm -rf dist node_modules package-lock.json
