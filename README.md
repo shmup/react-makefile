@@ -2,8 +2,6 @@
 
 clone and run `make`
 
-You need yarn: https://yarnpkg.com/lang/en/docs/install/
-
 You'll probably wanna remove the `.git` directory and start fresh
 
 #### make commands
@@ -11,7 +9,7 @@ You'll probably wanna remove the `.git` directory and start fresh
   - make - install and build shit
   - make dev-server - run a webpack dev server
   - make server - run a python SimpleHTTPServer
-  - make clean - remove the  `yarn.lock`, `node_modules/`, and `dist/`
+  - make clean - remove the  `package-lock.json`, `node_modules/`, and `dist/`
 
 #### uses
 
