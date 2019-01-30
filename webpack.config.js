@@ -25,9 +25,9 @@ var config = {
       },
       {
         test: /\.(css|sass|scss)$/,
-        use: ExtractTextPlugin.extract({
+	use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
           use: ['css-loader', 'sass-loader'],
-        }),
+        })),
       },
     ],
   },
