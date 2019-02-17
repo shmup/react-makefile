@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { hot } from 'react-hot-loader/root';
 
 class App extends React.Component {
@@ -9,6 +10,11 @@ class App extends React.Component {
       </div>
     );
   }
+}
+
+// https://github.com/facebook/prop-types#usage
+App.propTypes = {
+  example: PropTypes.string,
 }
 
 export default hot(App);
