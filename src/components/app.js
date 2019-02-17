@@ -1,6 +1,7 @@
 import React from 'react';
+import { hot } from 'react-hot-loader/root';
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div style={{textAlign: 'center'}}>
@@ -9,3 +10,5 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default hot(App);

@@ -12,7 +12,7 @@ server:
 	python -m SimpleHTTPServer 8888
 
 dev-server:
-	webpack-dev-server -d --progress --inline --port 8888
+	webpack-dev-server -d --progress --inline --port 8888 --hot
 
 package-lock.json: node_modules package.json
 	$(MAKE clean)
